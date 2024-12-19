@@ -31,7 +31,6 @@
       href="assets/css/skins/default-color.css"
       id="theme-color-toggle"
     />
-    
 
     <!-- Google tag (gtag.js) -->
     <script async="" src="gtag/js?id=G-ZJ3SLZJGQJ"></script>
@@ -240,11 +239,68 @@
         }
       }
 
-      @media (min-width: 200px) and (max-width: 375px) {
-        #building {
-          background-color: green;
-          flex-direction: column;
-        }
+      .get-in-touch {
+        max-width: 800px;
+        margin: 50px auto;
+        position: relative;
+      }
+      .get-in-touch .title {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 3.2em;
+        line-height: 48px;
+        padding-bottom: 48px;
+      }
+
+      .contact-form .form-field {
+        position: relative;
+        margin: 32px 0;
+      }
+      .contact-form .input-text {
+        display: block;
+        width: 100%;
+        height: 36px;
+        border-width: 0 0 2px 0;
+
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+      }
+      .contact-form .input-text:focus {
+        outline: none;
+      }
+      .contact-form .input-text:focus + .label,
+      .contact-form .input-text.not-empty + .label {
+        -webkit-transform: translateY(-24px);
+        transform: translateY(-24px);
+      }
+      .contact-form .label {
+        position: absolute;
+        left: 20px;
+        bottom: 11px;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+
+        cursor: text;
+        transition: -webkit-transform 0.2s ease-in-out;
+        transition: transform 0.2s ease-in-out;
+        transition: transform 0.2s ease-in-out,
+          -webkit-transform 0.2s ease-in-out;
+      }
+      .contact-form .submit-btn {
+        display: inline-block;
+        background-color: #000;
+        background-image: linear-gradient(125deg, #a72879, #064497);
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 16px;
+        padding: 8px 16px;
+        border: none;
+        width: 200px;
+        cursor: pointer;
       }
     </style>
   </head>
@@ -499,7 +555,7 @@
               </div>
             </div>
             <div class="row pt-2">
-              <div class="col-md-6 text-left">
+              <div class="col-md-12 col-lg-6 text-left">
                 <div class="text">
                   <h5>
                     <u
@@ -519,7 +575,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-sm-6 text-left Trainings">
+              <div class="col-md-12 col-lg-6 text-left Trainings">
                 <div class="text">
                   <h5>
                     <u
@@ -540,7 +596,7 @@
                 </div>
               </div>
               <div class="row pt-5">
-                <div class="col-md-6 text-left Technical">
+                <div class="col-md-12 col-lg-6 text-left Technical">
                   <div class="text pl-3">
                     <h5>
                       <u
@@ -581,7 +637,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="col-sm-6 pb-2 text-left Technical1">
+                <div class="col-md-12 col-lg-6 pb-2 text-left Technical1">
                   <div class="text">
                     <h5>
                       <u><b></b> </u>
@@ -632,7 +688,7 @@
 
     <!--// Services Section End //-->
     <!--// Resume Section Start //-->
-     <section class="section p-2 pb-minus-10 bg-primary-light" id="myresume">
+    <section class="section p-2 pb-minus-10 bg-primary-light" id="myresume">
       <div class="container">
         <div class="row WORK">
           <div class="col-lg-6">
@@ -726,8 +782,8 @@
           </div>
         </div>
       </div>
-    </section> 
-  
+    </section>
+
     <!--// Resume Section End //-->
     <!--// Services Section Start //-->
     <section class="section">
@@ -1286,7 +1342,7 @@
         </div>
         <div class="row flex-wrap" id="building">
           <div
-            class="col-md-3 col-12 wow fadeInUp"
+            class="col-lg-3 col-md-12 wow fadeInUp"
             data-wow-duration="0.7s"
             data-wow-delay="0.1s"
           >
@@ -1296,7 +1352,7 @@
             </div>
           </div>
           <div
-            class="col-md-3 col-12 wow fadeInUp"
+            class="col-lg-3 col-md-12 wow fadeInUp"
             data-wow-duration="0.7s"
             data-wow-delay="0.3s"
           >
@@ -1306,7 +1362,7 @@
             </div>
           </div>
           <div
-            class="col-md-3 col-12 wow fadeInUp"
+            class="col-lg-3 col-md-12 wow fadeInUp"
             data-wow-duration="0.7s"
             data-wow-delay="0.1s"
           >
@@ -1316,7 +1372,7 @@
             </div>
           </div>
           <div
-            class="col-md-3 col-12 wow fadeInUp"
+            class="col-lg-3 col-md-12 wow fadeInUp"
             data-wow-duration="0.7s"
             data-wow-delay="0.1s"
           >
@@ -1333,7 +1389,7 @@
 
     <!--// Testimonial Section End //-->
     <!--// Contact Section Start //-->
-    <section
+    <!-- <section
       class="section bg-primary-light"
       id="contact"
       data-scroll-index="7"
@@ -1453,11 +1509,108 @@
           </div>
         </div>
       </div>
+    </section> -->
+
+    <section class="get-in-touch">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 my-3">
+          <div class="section-heading">
+            <h2 class="text-center">Contact Us</h2>
+          </div>
+        </div>
+      </div>
+       
+      <form class="contact-form row">
+        <div class="col-lg-6">
+          <div class="contact-form-group">
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              required=""
+              id="contactName"
+              placeholder="Your Name *"
+            />
+            <div class="form-validate-icons">
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="contact-form-group">
+            <input
+              type="text"
+              class="form-control"
+              name="mobile"
+              required=""
+              id="contactPhone"
+              placeholder="Phone Ex. 9696921427 *"
+            />
+            <div class="form-validate-icons">
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="form-field col-lg-6">
+          <div class="contact-form-group">
+            <input
+              type="text"
+              class="form-control"
+              name="email"
+              required=""
+              id="contactEmail"
+              placeholder="Your Email *"
+            />
+            <div class="form-validate-icons">
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="form-field col-lg-6">
+          <div class="contact-form-group custom-select-wrapper">
+            <select
+              name="subject"
+              class="form-control"
+              id="contactSubject"
+              required=""
+            >
+              <option value="">Please Select</option>
+              <option value="Website Development">Website Development</option>
+              <option value="Application Development">
+                Application Development
+              </option>
+              <option value="Software Development">Software Development</option>
+              <option value="Training">Training</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-field col-lg-12">
+          <div class="contact-form-group">
+            <textarea
+              name="message"
+              id="contactMessage"
+              required=""
+              class="form-control"
+              placeholder="Your Message *"
+              cols="20"
+              rows="8"
+            ></textarea>
+            <div class="form-validate-icons">
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="form-field col-lg-12">
+          <div class="contact-btn-left text-center">
+            <button type="submit" id="contactBtn" class="primary-btn">
+              <span class="text">Send Message</span>
+              <span class="icon"><i class="fa fa-arrow-right"></i></span>
+            </button>
+          </div>
+        </div>
+      </form>
     </section>
-
-
-  
- 
 
     <!--// Contact Section End //-->
     <!--//Google Map Section Start //-->
@@ -1466,96 +1619,109 @@
     <!--// Footer Start //-->
     <footer class="footer">
       <div class="footer-top">
-        <div class="container">
-          <div class="row flex-wrap">
-            <div class="col-md-6 footer-widget-resp">
-              <div class="footer-widget">
-                <h6 class="footer-title">About Me</h6>
-                <h5 style="color: #ff4500">𝓐𝓷𝓾𝓹 𝓜𝓲𝓼𝓱𝓻𝓪</h5>
-                <p class="footer-desc">
-                  A Quick learner and eager to up to date in IT Industry with
-                  Programming languages & Development tools.
-                </p>
-                <div class="footer-social-links">
-                  <a
-                    href="https://www.instagram.com/anup.ekanatechnologies/"
-                    target="_Blank"
-                  >
-                    <i class="fa fa-instagram" style="font-size: 22px"></i>
-                  </a>
-                  <a
-                    href="https://www.youtube.com/channel/UC2cijOLoUh-I18aAGvJazWQ"
-                    target="_Blank"
-                  >
-                    <i class="fa fa-youtube" style="font-size: 22px"></i>
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/anup-mishra-622a07238/
-                               "
-                    target="_Blank"
-                  >
-                    <i class="fa fa-linkedin" style="font-size: 22px"></i>
-                  </a>
-                  <a
-                    href="https://github.com/MI5RA
-                               "
-                    target="_Blank"
-                  >
-                    <i class="fa fa-github" style="font-size: 22px"></i>
-                  </a>
+        <div class="container text-white">
+          <!-- Grid container -->
+          <div class="container text-light p-4">
+            <!--Grid row-->
+            <div class="row mt-4">
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <div class="footer-widget">
+                  <h6 class="footer-title">About Me</h6>
+                  <h5 style="color: #ff4500">𝓐𝓷𝓾𝓹 𝓜𝓲𝓼𝓱𝓻𝓪</h5>
+                  <p class="footer-desc">
+                    A Quick learner and eager to up to date in IT Industry with
+                    Programming languages & Development tools.
+                  </p>
+                  <div class="footer-social-links">
+                    <a
+                      href="https://www.instagram.com/anup.ekanatechnologies/"
+                      target="_Blank"
+                    >
+                      <i class="fa fa-instagram" style="font-size: 22px"></i>
+                    </a>
+                    <a
+                      href="https://www.youtube.com/channel/UC2cijOLoUh-I18aAGvJazWQ"
+                      target="_Blank"
+                    >
+                      <i class="fa fa-youtube" style="font-size: 22px"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/anup-mishra-622a07238/
+                                 "
+                      target="_Blank"
+                    >
+                      <i class="fa fa-linkedin" style="font-size: 22px"></i>
+                    </a>
+                    <a
+                      href="https://github.com/MI5RA
+                                 "
+                      target="_Blank"
+                    >
+                      <i class="fa fa-github" style="font-size: 22px"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6 footer-widget-resp">
-              <div class="footer-widget footer-widget-pl">
-                <h6 class="footer-title">Usefull Links</h6>
-                <ul class="footer-links pl-2">
-                  <li>
-                    <a href="#Services">My Services</a>
-                  </li>
+              <!--Grid column-->
 
-                  <li>
-                    <a href="">My Works</a>
-                  </li>
-                  <li>
-                    <a href="#contact">Get in Touch</a>
-                  </li>
-                </ul>
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <div class="footer-widget">
+                  <h6 class="footer-title">Contact Info</h6>
+                  <div class="footer-contact-info-wrap">
+                    <ul class="footer-contact-info-list pl-2">
+                      <li>
+                        <h6>Address:</h6>
+                        <a class="text-white" href="">
+                          Munshipulia Metro Station, 16/286, Mandi Road, Sector
+                          17, Sector 16, Indira Nagar, Lucknow, Uttar Pradesh
+                          206016
+                        </a>
+                      </li>
+                      <li>
+                        <h6>E-Mail &amp; Phone:</h6>
+                        <div class="text">
+                          <a href="tel:9696921427" class="text-white"
+                            >+91-6306511436 (Primary + WhatsApp)</a
+                          >
+                          <a
+                            href="mailto:anupmishra.0108@gmail.com"
+                            class="text-white"
+                            >anupmishra.0108@gmail.com</a
+                          >
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-lg-4 footer-widget-resp">
-              <div class="footer-widget">
-                <h6 class="footer-title">Contact Info</h6>
-                <div class="footer-contact-info-wrap">
-                  <ul class="footer-contact-info-list pl-2">
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-12">
+                <div class="footer-widget footer-widget-pl">
+                  <h6 class="footer-title">Usefull Links</h6>
+                  <ul class="footer-links pl-2">
                     <li>
-                      <h6>Address:</h6>
-                      <a class="text-white" href="">
-                        Munshipulia Metro Station, 16/286, Mandi Road, Sector
-                        17, Sector 16, Indira Nagar, Lucknow, Uttar Pradesh
-                        206016
-                      </a>
+                      <a href="#Services">My Services</a>
+                    </li>
+
+                    <li>
+                      <a href="">My Works</a>
                     </li>
                     <li>
-                      <h6>E-Mail &amp; Phone:</h6>
-                      <div class="text">
-                        <a href="tel:9696921427" class="text-white"
-                          >+91-6306511436 (Primary + WhatsApp)</a
-                        >
-                        <a
-                          href="mailto:anupmishra.0108@gmail.com"
-                          class="text-white"
-                          >anupmishra.0108@gmail.com</a
-                        >
-                      </div>
+                      <a href="#contact">Get in Touch</a>
                     </li>
                   </ul>
                 </div>
               </div>
+              <!--Grid column-->
             </div>
+            <!--Grid row-->
           </div>
+          <!-- Grid container -->
+
           <div class="row justify-content-md-center">
             <div class="col-md-6 col-lg-4 footer-widget-resp text-center">
               <p class="copyright-text text-center text-light">
@@ -1568,6 +1734,9 @@
       </div>
     </footer>
 
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+
+    <!-- End of .container -->
     <!--Start of Tawk.to Script-->
 
     <!--End of Tawk.to Script-->
