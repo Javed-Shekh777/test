@@ -1,0 +1,36 @@
+.fixed-top-scroll {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+    transition: all 0.3s ease-in-out;
+}
+@media (max-width: 380px) {
+    #logo{
+        width: 50px;
+    }
+  #h1 {
+    line-height: 60px !important;
+    font-size: 50px !important;
+  }
+  #h2 {
+    line-height: 40px !important;
+    text-align: justify;
+    font-size: 30px !important;
+    width: 100%;
+  }
+  #h3 {
+    width: 100%;
+    margin: 10px 0px !important;
+    text-align: justify;
+    font-size: 30px !important;
+    line-height: 40px !important;
+
+  }
+}
+
+@media (max-width: 768px) and (min-width: 425px) {
+  .tabFooter {
+    margin-top: 3rem;
+  }
+}
